@@ -1,6 +1,6 @@
 # Ride Sharing Real-Time Analytics with Apache Spark
 
-## 📦 Project Structure
+## Project Structure
 
 This project demonstrates real-time streaming and analytics using Apache Spark Structured Streaming. It consists of a data generator and three Spark tasks.
 
@@ -36,7 +36,7 @@ This starts a streaming server that sends one JSON ride event per second.
 
 ---
 
-## 🚀 Task 1: Basic Structured Streaming to CSV
+## Task 1: Basic Structured Streaming to CSV
 
 **File**: `task1.py`
 
@@ -53,7 +53,7 @@ spark-submit task1.py
 
 ---
 
-## 🚀 Task 2: Micro-Batch Processing with foreachBatch
+## Task 2: Micro-Batch Processing with foreachBatch
 
 **File**: `task2.py`
 
@@ -69,7 +69,7 @@ spark-submit task2.py
 
 ---
 
-## 🚀 Task 3: Time Window Aggregation
+##  Task 3: Time Window Aggregation
 
 **File**: `task3.py`
 
@@ -87,18 +87,8 @@ spark-submit task3.py
 
 ---
 
-## 🔌 Socket and Streaming Concept
 
-- A **socket** stream provides real-time input to Spark.
-- Spark's **Structured Streaming** processes this unbounded stream as a continuous DataFrame.
-- You can use:
-  - `writeStream.format("csv")` for simple file output
-  - `foreachBatch()` for custom logic per batch
-  - `window()` and `watermark()` for time-based aggregations
-
----
-
-## 📁 Directory Layout
+## Directory Layout
 
 ```
 .
